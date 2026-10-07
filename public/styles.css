@@ -211,7 +211,7 @@ h2.section-title { font-size: clamp(2rem, 4.5vw, 3.2rem); margin-bottom: 1.1rem;
   }
   .hero .wrap { grid-template-columns: 1fr; gap: 2rem; }
   .hero-key-wrap { order: -1; }
-  .hero-key { width: min(150px, 45vw); }
+  .hero-key { width: auto; height: 190px; max-height: 32vh; }
   .stats .wrap { grid-template-columns: 1fr 1fr; gap: 1.6rem 1rem; }
   .mission-grid, .founder-grid, .join .wrap { grid-template-columns: 1fr; gap: 2rem; }
   .roles { grid-template-columns: 1fr; }
