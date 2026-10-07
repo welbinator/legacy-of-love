@@ -1,0 +1,227 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Layout
+  title="Legacy of Love | The Golden Key Movement"
+  description="Legacy of Love is a national movement founded by Tammy Riggs, a Certified Senior Advisor, to help caregivers and families prevent financial loss, protect dignity, and age with independence."
+>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Legacy of Love home">
+        <img src={`${base}/images/golden-key.png`} alt="Legacy of Love golden key" />
+        <b>Legacy of Love</b>
+      </a>
+      <nav class="nav-links" id="nav">
+        <a href="#mission">The Mission</a>
+        <a href="#founder">Our Founder</a>
+        <a href="#movement">The Movement</a>
+        <a class="btn btn-gold nav-cta" href="#join">Join Us</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#163300" stroke-width="2.2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <span class="hero-eyebrow">Prevention · Purpose · Power</span>
+          <h1>Hand every family the <span class="gold">Golden Key</span> to longevity and dignity.</h1>
+          <p class="lede">A national movement to help caregivers and families prevent financial loss, avoid unnecessary care admissions, and age with independence.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#join">Join the Movement</a>
+            <a class="btn btn-ghost-light" href="#founder">Meet Tammy</a>
+          </div>
+        </div>
+        <div class="hero-key-wrap">
+          <img class="hero-key" src={`${base}/images/golden-key.png`} alt="The Golden Key, a heart topped golden key that is the symbol of Legacy of Love" />
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS (grounded in Tammy's stated record) -->
+    <div class="stats">
+      <div class="wrap stagger">
+        <div class="stat rise"><b>40+</b><span>Years in long term care and healthcare advocacy</span></div>
+        <div class="stat rise"><b>1,000+</b><span>Insurance professionals trained nationwide</span></div>
+        <div class="stat rise"><b>13</b><span>States reached as a national trainer</span></div>
+        <div class="stat rise"><b>48M</b><span>Caregivers the movement aims to reach</span></div>
+      </div>
+    </div>
+
+    <!-- MISSION -->
+    <section class="mission" id="mission">
+      <div class="wrap mission-grid">
+        <div class="rise">
+          <div class="section-tag">The Mission</div>
+          <h2 class="section-title">Care should protect families, not bankrupt them.</h2>
+          <p class="lead-copy">Too many families face aging and long term care alone, stretched thin between caring for parents and raising their own children. Legacy of Love exists to change that, with a new standard built on prevention, dignity, and security.</p>
+        </div>
+        <div class="pillars stagger">
+          <div class="pillar rise">
+            <h3><span class="dot"></span>Prevention</h3>
+            <p>Help families plan early so they can avoid unnecessary hospital stays and long term care admissions.</p>
+          </div>
+          <div class="pillar rise">
+            <h3><span class="dot"></span>Purpose</h3>
+            <p>Protect dignity and independence through education, advocacy, and community, not fear.</p>
+          </div>
+          <div class="pillar rise">
+            <h3><span class="dot"></span>Power</h3>
+            <p>Give caregivers the knowledge and support to take control of their health and their future.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="founder" id="founder">
+      <div class="wrap founder-grid">
+        <div class="founder-card rise">
+          <div class="monogram"><img src={`${base}/images/golden-key.png`} alt="Golden key emblem" /></div>
+          <b>Tammy Riggs</b>
+          <span>Founder &amp; Certified Senior Advisor</span>
+        </div>
+        <div class="founder-copy rise">
+          <div class="section-tag">Our Founder</div>
+          <h2 class="section-title">Four decades of protecting families.</h2>
+          <p>Beginning in 1987, Tammy Riggs served as a Certified Senior Advisor and national long term care trainer, educating more than 1,000 insurance professionals across 13 states and helping families protect themselves from financial catastrophe.</p>
+          <p>Inspired by the fearless spirit of Clara Barton, founder of the American Red Cross, and the wisdom of her grandmother, she built Legacy of Love and The Golden Key Movement as a new standard for preventive health, dignity, and security.</p>
+          <p class="pull">The best in the world, or nothing. That is the standard families deserve.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOVEMENT -->
+    <section class="movement" id="movement">
+      <div class="wrap">
+        <div class="rise">
+          <div class="section-tag dark-tag">The Golden Key Movement</div>
+          <h2 class="section-title">A movement built by people who care.</h2>
+          <p class="lead-copy">Legacy of Love is growing into one of the largest caregiver movements of its kind, empowering corporations, communities, and families with the Golden Key to longevity, good health, and independence. There is a place in it for you.</p>
+        </div>
+        <div class="roles stagger">
+          <div class="role rise">
+            <div class="num">01</div>
+            <h3>Ambassadors</h3>
+            <p>Champions who carry the message into their own communities, workplaces, and families.</p>
+          </div>
+          <div class="role rise">
+            <div class="num">02</div>
+            <h3>Donut Dollies</h3>
+            <p>Volunteers who bring comfort, encouragement, and a human touch to caregivers and families.</p>
+          </div>
+          <div class="role rise">
+            <div class="num">03</div>
+            <h3>Families</h3>
+            <p>The heart of the movement, learning to plan early, protect dignity, and stay independent longer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN / SIGNUP -->
+    <section class="join" id="join">
+      <div class="wrap">
+        <div class="rise">
+          <div class="section-tag">Join Us</div>
+          <h2 class="section-title">Be part of the Legacy.</h2>
+          <p class="lead-copy">Sign up for updates, news, and ways to participate in the Golden Key Movement. Tell us how you would like to help, and we will be in touch.</p>
+        </div>
+        <div class="signup-card rise">
+          <h3>Stay connected</h3>
+          <p class="sub">Updates, news, and ways to take part.</p>
+          <form id="joinForm" novalidate>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="First and last name" />
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="you@email.com" required />
+            </div>
+            <div class="field">
+              <label for="message">How would you like to help? (optional)</label>
+              <textarea id="message" name="message" placeholder="I would love to become an Ambassador..."></textarea>
+            </div>
+            <div class="hp"><label>Leave this empty<input type="text" name="website_hp" tabindex="-1" autocomplete="off" /></label></div>
+            <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center;">Sign Up</button>
+            <p class="form-note">We respect your inbox. No spam, just the movement.</p>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <a class="brand" href="#top" aria-label="Legacy of Love home">
+          <img src={`${base}/images/golden-key.png`} alt="" style="height:38px;" />
+          <b>Legacy of Love</b>
+        </a>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/legacyforlove" target="_blank" rel="noopener" aria-label="Tammy Riggs on LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5.001A2.5 2.5 0 014.98 3.5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-1 1.82-2.05 3.75-2.05C20.4 8.59 22 10.6 22 14.1V21h-4v-6.1c0-1.46-.03-3.34-2.03-3.34-2.04 0-2.35 1.59-2.35 3.23V21H9z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#mission">Mission</a>
+        <a href="#founder">Founder</a>
+        <a href="#movement">Movement</a>
+        <a href="#join">Join</a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>Legacy of Love · The Golden Key Movement · Founded by Tammy Riggs, Certified Senior Advisor · Rochester, New York</span>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const mb = document.getElementById('menuBtn');
+    const nav = document.getElementById('nav');
+    mb && mb.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      mb.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav && nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => {
+      nav.classList.remove('open'); mb.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Form submit
+    const form = document.getElementById('joinForm');
+    const status = document.getElementById('formStatus');
+    form && form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = ''; status.className = 'form-status';
+      const payload = {
+        name: form.name.value, email: form.email.value,
+        message: form.message.value, website_hp: form.website_hp.value,
+      };
+      if (!payload.email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(payload.email)) {
+        status.textContent = 'Please enter a valid email address.'; status.classList.add('err'); return;
+      }
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
+        });
+        const data = await res.json();
+        if (data.ok) {
+          form.reset();
+          status.textContent = 'Thank you for joining. We will be in touch soon.'; status.classList.add('ok');
+        } else {
+          status.textContent = data.error || 'Something went wrong. Please try again.'; status.classList.add('err');
+        }
+      } catch (err) {
+        status.textContent = 'Something went wrong. Please try again.'; status.classList.add('err');
+      }
+    });
+  </script>
+</Layout>
