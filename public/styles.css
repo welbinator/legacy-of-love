@@ -1,17 +1,16 @@
 :root {
-  /* Parchment & Deep Burgundy (warm, heirloom). Token names kept for minimal churn;
-     --forest-ink is now the deep burgundy anchor, --gold stays her real key tone. */
-  --forest-ink: #5c1a22;   /* deep burgundy/wine - primary dark, headings, dark sections */
-  --spruce: #45121a;       /* deeper wine - card surfaces on dark, footer step */
-  --obsidian: #330b12;     /* darkest wine - footer, deepest recess */
-  --gold: #c08a3e;         /* warm bronze-gold sampled from her key */
-  --gold-soft: #d9a85a;    /* lighter warm gold for hovers */
-  --linen: #f7efe4;        /* warm ivory text on dark */
-  --linen-mist: #ecdcc8;   /* warm sand - borders, muted light text */
-  --cream: #faf4ea;        /* warm parchment canvas */
-  --charcoal: #3b2b26;     /* warm brown-black body text */
-  --slate: #786258;        /* warm taupe secondary text */
-  --pebble: #a08b7e;       /* muted warm gray */
+  /* Her real brand palette, sampled directly from legacy-of-love.info placeholder. */
+  --forest-ink: #0f2e21;   /* her deep green - dark sections, headings */
+  --spruce: #0a2318;       /* darker green - card surfaces on dark */
+  --obsidian: #07180f;     /* darkest green - footer */
+  --gold: #e8ab30;         /* her exact gold accent */
+  --gold-soft: #f0c257;    /* lighter gold for hovers */
+  --linen: #faf8f5;        /* her cream text on dark */
+  --linen-mist: #daddd5;   /* her warm border/muted light tone */
+  --cream: #f5f6f4;        /* her canvas */
+  --charcoal: #0e1b16;     /* her dark text */
+  --slate: #4a5a51;        /* muted green-gray secondary text */
+  --pebble: #8a968c;       /* muted gray */
   --font-display: "Archivo", system-ui, sans-serif;
   --font-body: "Newsreader", Georgia, serif;
   --maxw: 1140px;
@@ -122,7 +121,7 @@ html.reveal-ready .stagger > *:nth-child(5) { transition-delay: .32s; }
 /* ---------- Sections ---------- */
 section { padding: clamp(3.5rem, 7vw, 6rem) 0; }
 .section-tag { font-family: var(--font-display); font-weight: 700; font-size: .8rem; text-transform: uppercase; letter-spacing: .14em; color: var(--gold); margin-bottom: .9rem; }
-.section-tag.dark-tag { color: #9c3f2a; }
+.section-tag.dark-tag { color: #0b5d2a; }
 h2.section-title { font-size: clamp(2rem, 4.5vw, 3.2rem); margin-bottom: 1.1rem; }
 .lead-copy { font-size: 1.2rem; color: var(--slate); max-width: 56ch; }
 
@@ -146,7 +145,7 @@ h2.section-title { font-size: clamp(2rem, 4.5vw, 3.2rem); margin-bottom: 1.1rem;
 }
 .founder-card .monogram {
   width: 110px; height: 110px; margin: 0 auto 1.2rem; border-radius: 50%;
-  background: radial-gradient(circle at 50% 35%, #7a2730, var(--spruce));
+  background: radial-gradient(circle at 50% 35%, #1a4d35, var(--spruce));
   border: 2px solid var(--gold); display: grid; place-items: center;
 }
 .founder-card .monogram img { width: 58px; }
@@ -184,7 +183,7 @@ h2.section-title { font-size: clamp(2rem, 4.5vw, 3.2rem); margin-bottom: 1.1rem;
 .hp { position: absolute; left: -9999px; }
 .form-note { font-size: .85rem; color: var(--slate); margin-top: .8rem; }
 .form-status { margin-top: 1rem; font-family: var(--font-display); font-weight: 600; font-size: .95rem; }
-.form-status.ok { color: #7a2730; }
+.form-status.ok { color: #0b5d2a; }
 .form-status.err { color: #cb272f; }
 
 /* Footer */
